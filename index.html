@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perccent Prototypes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #3ad77e 0%, #0047bd 100%);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1400px;
+            width: 100%;
+            padding: 20px;
+            perspective: 1000px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(33, 33, 33, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 
+                20px 20px 60px rgba(0, 0, 0, 0.3),
+                -20px -20px 60px rgba(255, 255, 255, 0.05),
+                inset 5px 5px 15px rgba(255, 255, 255, 0.05),
+                inset -5px -5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transform-style: preserve-3d;
+            transform: translateZ(0);
+        }
+
+        .card:hover {
+            transform: translateY(-10px) translateZ(20px);
+            box-shadow: 
+                25px 25px 75px rgba(0, 0, 0, 0.35),
+                -25px -25px 75px rgba(255, 255, 255, 0.1),
+                inset 7px 7px 20px rgba(255, 255, 255, 0.1),
+                inset -7px -7px 20px rgba(0, 0, 0, 0.35);
+            background: rgba(33, 33, 33, 0.85);
+        }
+
+        .card h2 {
+            margin: 15px 0;
+            font-size: 1.8rem;
+            color: #ffffff;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .card p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 10px;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            transition: all 0.4s ease;
+            filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+        }
+
+        .card:hover .icon {
+            transform: scale(1.2) translateZ(30px);
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+        }
+
+        @media (max-width: 1200px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .header h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Perccent Prototypes</h1>
+        <p>Choose your preferred version to explore</p>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <a href="https://www.figma.com/proto/xQmvE4X64KVxJ6LHVZieVn/Perccent-UI?page-id=682%3A1066&node-id=725-2678&viewport=1122%2C155%2C0.09&t=3V8n3lQPltBVXSHJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=730%3A8006&show-proto-sidebar=1" class="card" target="_blank">
+                <div class="icon">📱☀️</div>
+                <h2>Phone Light</h2>
+                <p>View the mobile light theme prototype</p>
+            </a>
+
+            <a href="https://www.figma.com/proto/xQmvE4X64KVxJ6LHVZieVn/Perccent-UI?page-id=682%3A1066&node-id=730-8095&viewport=1122%2C155%2C0.09&t=3V8n3lQPltBVXSHJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=730%3A8095&show-proto-sidebar=1" class="card" target="_blank">
+                <div class="icon">📱🌙</div>
+                <h2>Phone Dark</h2>
+                <p>View the mobile dark theme prototype</p>
+            </a>
+
+            <a href="https://www.figma.com/proto/xQmvE4X64KVxJ6LHVZieVn/Perccent-UI?page-id=682%3A1066&node-id=730-8843&viewport=1122%2C155%2C0.09&t=3V8n3lQPltBVXSHJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=730%3A8843&show-proto-sidebar=1" class="card" target="_blank">
+                <div class="icon">💻☀️</div>
+                <h2>Desktop Light</h2>
+                <p>View the desktop light theme prototype</p>
+            </a>
+
+            <a href="https://www.figma.com/proto/xQmvE4X64KVxJ6LHVZieVn/Perccent-UI?page-id=682%3A1066&node-id=730-8964&viewport=1122%2C155%2C0.09&t=3V8n3lQPltBVXSHJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=730%3A8964&show-proto-sidebar=1" class="card" target="_blank">
+                <div class="icon">💻🌙</div>
+                <h2>Desktop Dark</h2>
+                <p>View the desktop dark theme prototype</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
